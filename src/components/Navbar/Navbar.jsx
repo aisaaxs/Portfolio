@@ -14,7 +14,7 @@ const Navbar = ({ useDarkMode, setUseDarkMode }) => {
         <div className={`w-full min-w-[1460px] h-auto min-h-[70px] grid grid-cols-[40%_auto_5%] ${useDarkMode ? 'bg-[#15191F] border-[#f5f5f5]' : 'bg-[#f5f5f5] border-[#15191F]'} fixed top-0 left-0`}>
             <div className="flex justify-start items-center">
                 <code className="press-start-2p-regular text-[15px] uppercase m-0 p-0 leading-tight text-black">
-                    <span className="bg-stone-300 py-[10px] px-[10px]">~/W/V/</span>
+                    <span className="bg-gray-300 py-[10px] px-[10px]">~/W/V/</span>
                     
                     <span className="bg-[#fdd615] py-[10px] px-[10px]">Anitej Isaac Sharma</span>
 

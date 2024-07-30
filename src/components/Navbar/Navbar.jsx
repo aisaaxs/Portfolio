@@ -1,4 +1,3 @@
-import logo from "../../images/logo.png";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubAlt } from "@fortawesome/free-brands-svg-icons";
@@ -32,7 +31,7 @@ const Navbar = ({ useDarkMode, setUseDarkMode }) => {
                 <div className={`tooltip ${tooltipClass}`}>
                     <FontAwesomeIcon icon={faHouse} className="text-[25px] cursor-pointer" onClick={() => setCurrentPage("Home Page")} />
                     
-                    <hr className={`w-full h-[4px] bg-orange-500 mt-[4px] border-none ${currentPage == "Home Page" ? 'visible' : 'hidden'}`} />
+                    <hr className={`w-full h-[4px] bg-orange-500 mt-[4px] border-none ${currentPage === "Home Page" ? 'visible' : 'hidden'}`} />
                     
                     <span className="tooltiptext">Home Page</span>
                 </div>
@@ -40,7 +39,7 @@ const Navbar = ({ useDarkMode, setUseDarkMode }) => {
                 <div className={`tooltip ${tooltipClass}`}>
                     <FontAwesomeIcon icon={faUser} className="text-[25px] cursor-pointer" onClick={() => setCurrentPage("About Me")} />
                     
-                    <hr className={`w-full h-[4px] bg-orange-500 mt-[4px] border-none ${currentPage == "About Me" ? 'visible' : 'hidden'}`} />
+                    <hr className={`w-full h-[4px] bg-orange-500 mt-[4px] border-none ${currentPage === "About Me" ? 'visible' : 'hidden'}`} />
                     
                     <span className="tooltiptext">About Me</span>
                 </div>
@@ -48,7 +47,7 @@ const Navbar = ({ useDarkMode, setUseDarkMode }) => {
                 <div className={`tooltip ${tooltipClass}`}>
                     <FontAwesomeIcon icon={faBriefcase} className="text-[25px] cursor-pointer" onClick={() => setCurrentPage("Professional Experience")} />
                     
-                    <hr className={`w-full h-[4px] bg-orange-500 mt-[4px] border-none ${currentPage == "Professional Experience" ? 'visible' : 'hidden'}`} />
+                    <hr className={`w-full h-[4px] bg-orange-500 mt-[4px] border-none ${currentPage === "Professional Experience" ? 'visible' : 'hidden'}`} />
                     
                     <span className="tooltiptext">Professional Experience</span>
                 </div>
@@ -56,7 +55,7 @@ const Navbar = ({ useDarkMode, setUseDarkMode }) => {
                 <div className={`tooltip ${tooltipClass}`}>
                     <FontAwesomeIcon icon={faLaptop} className="text-[25px] cursor-pointer" onClick={() => setCurrentPage("View Projects")} />
                     
-                    <hr className={`w-full h-[4px] bg-orange-500 mt-[4px] border-none ${currentPage == "View Projects" ? 'visible' : 'hidden'}`} />
+                    <hr className={`w-full h-[4px] bg-orange-500 mt-[4px] border-none ${currentPage === "View Projects" ? 'visible' : 'hidden'}`} />
                     
                     <span className="tooltiptext">View Projects</span>
                 </div>
@@ -64,7 +63,7 @@ const Navbar = ({ useDarkMode, setUseDarkMode }) => {
                 <div className={`tooltip ${tooltipClass}`}>
                     <FontAwesomeIcon icon={faEnvelope} className="text-[25px] cursor-pointer" onClick={() => setCurrentPage("Contact Me")} />
                     
-                    <hr className={`w-full h-[4px] bg-orange-500 mt-[4px] border-none ${currentPage == "Contact Me" ? 'visible' : 'hidden'}`} />
+                    <hr className={`w-full h-[4px] bg-orange-500 mt-[4px] border-none ${currentPage === "Contact Me" ? 'visible' : 'hidden'}`} />
                     
                     <span className="tooltiptext">Contact Me</span>
                 </div>

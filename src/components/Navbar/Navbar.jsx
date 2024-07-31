@@ -10,7 +10,7 @@ const Navbar = ({ useDarkMode, setUseDarkMode }) => {
     const [currentPage, setCurrentPage] = useState("Home Page");
 
     return (
-        <div className={`w-full min-w-[1460px] h-auto min-h-[70px] grid grid-cols-[40%_auto_5%] ${useDarkMode ? 'bg-[#15191F] border-[#f5f5f5]' : 'bg-[#f5f5f5] border-[#15191F]'} fixed top-0 left-0`}>
+        <div className={`w-full min-w-[1460px] h-auto min-h-[70px] grid grid-cols-[60%_auto_5%] ${useDarkMode ? 'bg-black border-[#f5f5f5]' : 'bg-white border-[#15191F]'} fixed top-0 left-0 z-[90]`}>
             <div className="flex justify-start items-center">
                 <code className="press-start-2p-regular text-[15px] uppercase m-0 p-0 leading-tight text-black">
                     <span className="bg-gray-300 py-[10px] px-[10px]">~/W/V/</span>
@@ -22,7 +22,7 @@ const Navbar = ({ useDarkMode, setUseDarkMode }) => {
 
                         <FontAwesomeIcon icon={faCodeBranch} className="text-[22px] ml-[10px]" />
 
-                        <span className="lowercase ml-[10px]">main</span>
+                        <span className="lowercase ml-[10px]">{currentPage}</span>
                     </span>
                 </code>
             </div>

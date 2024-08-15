@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.font-rubik-mono-one {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-bebas-neue {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+@keyframes slideIn {
+    from {
+      transform: var(--start-transform);
+    }
+    to {
+      transform: var(--end-transform);
+    }
+  }
+  
+  @keyframes slideOut {
+    from {
+      transform: var(--end-transform);
+    }
+    to {
+      transform: var(--start-transform);
+    }
+  }
+
+  .animate-slideIn0 {
+    --start-transform: translateX(10%) translateY(40%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideIn 500ms ease-in-out;
+  }
+  
+  .animate-slideOut0 {
+    --start-transform: translateX(10%) translateY(40%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideOut 500ms ease-in-out;
+  }
+  
+  .animate-slideIn1 {
+    --start-transform: translateX(10%) translateY(160%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideIn 500ms ease-in-out;
+  }
+  
+  .animate-slideOut1 {
+    --start-transform: translateX(10%) translateY(160%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideOut 500ms ease-in-out;
+  }
+
+  .animate-slideIn2 {
+    --start-transform: translateX(10%) translateY(280%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideIn 500ms ease-in-out;
+  }
+  
+  .animate-slideOut2 {
+    --start-transform: translateX(10%) translateY(280%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideOut 500ms ease-in-out;
+  }
+
+  .animate-slideIn3 {
+    --start-transform: translateX(10%) translateY(400%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideIn 500ms ease-in-out;
+  }
+  
+  .animate-slideOut3 {
+    --start-transform: translateX(10%) translateY(400%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideOut 500ms ease-in-out;
+  }
+
+  .animate-slideIn4 {
+    --start-transform: translateX(10%) translateY(520%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideIn 500ms ease-in-out;
+  }
+  
+  .animate-slideOut4 {
+    --start-transform: translateX(10%) translateY(520%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideOut 500ms ease-in-out;
+  }
+
+  .animate-slideIn5 {
+    --start-transform: translateX(10%) translateY(640%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideIn 500ms ease-in-out;
+  }
+  
+  .animate-slideOut5 {
+    --start-transform: translateX(10%) translateY(640%);
+    --end-transform: translateX(140%) translateY(300%);
+    animation: slideOut 500ms ease-in-out;
+  }

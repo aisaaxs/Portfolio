@@ -1,24 +1,23 @@
-import Navbar from "./components/Navbar/Navbar";
-import { useState } from "react";
-
-/*import home_page_light from "./images/Home-Page-Light.png";
-import home_page_dark from "./images/Home-Page-Dark.png";*/
-
-import HomePage from "./components/HomePage/HomePage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Projects from "./components/Projects/Projects";
+import Wordle from "./components/Projects/Games/Wordle";
 
 function App() {
-  const [useDarkMode, setUseDarkMode] = useState(true);
 
   return (
-    <div className={`w-screen h-screen ${useDarkMode ? 'bg-black' : 'bg-white'} flex flex-col`}>
-      <Navbar useDarkMode={useDarkMode} setUseDarkMode={setUseDarkMode} />
+    <BrowserRouter>
+      <Routes>
+        {/* <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route> */}
 
-      <HomePage useDarkMode={useDarkMode} />
-      
-      {/*<section className="w-full flex items-center justify-center pt-[50px] absolute top-[70px] left-0">
-        <img src={useDarkMode ? home_page_dark : home_page_light} className="w-full min-w-[1460px]" alt="Home Page" style={{ height: 'calc(100vh - 120px)' }}  />
-      </section>*/}
-    </div>
+        <Route path="/projects" element={<Projects />}/>
+        <Route path="/projects/wordle" element={<Wordle />}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
